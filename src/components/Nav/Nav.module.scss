@@ -1,0 +1,32 @@
+@import '/src/styles/variables';
+
+.nav {
+  margin: 0 auto;
+  // TODO: breakpoints
+  width: 1200px;
+
+  .ul {
+    list-style: none;
+    display: flex;
+    gap: 0.2rem;
+
+    .link {
+      display: blox;
+      text-decoration: none;
+      color: $white;
+      transition: all 68ms ease-in-out;
+      padding: 0.25rem 0.5rem;
+      border-radius: 4px;
+
+      &:hover {
+        opacity: 0.9;
+        background-color: $primary-light;
+      }
+    }
+
+    .activeLink {
+      background-color: $white;
+      color: $primary;
+    }
+  }
+}
